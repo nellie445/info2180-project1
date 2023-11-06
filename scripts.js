@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
              messageDiv.textContent = 'Please enter a valid email address.';
             mes.appendChild(mestxt);   
         }
-        'Please enter a valid email address.'
+        
     }); //but[a] end
 
     var form = but[a].parentNode;
