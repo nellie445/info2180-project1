@@ -9,3 +9,153 @@ body {
     max-width: 960px;
     width: 100%;
 }
+/* Apply a base font and font size to the whole page */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #6b7280;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #5A67D8;
+}
+
+/* Hero Overview styling */
+.overview-hero {
+    background-color: #E2E8F0;
+    display: flex;
+}
+
+.overview-hero-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.overview-hero-text {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Learn About section styling */
+.learn-about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    color: #48BB78;
+    font-size: 21px;
+}
+
+/* COVID-19 Testing section styling */
+.testing {
+    background-color: #4A5568;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Recent Stories section styling */
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(3, 300px)); /* Create a grid with auto-fitting columns */
+    grid-gap: 20px; /* Add some spacing between articles */
+    padding: 20px;
+    justify-items: center; /* Align grid items to the start of each cell */
+}
+
+.article {
+    display: grid; /* Display articles as grid containersfor consistent content alignment */
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.article img {
+    border-radius: 50%;
+}
+
+.article h3, .article a {
+    color: #5A67D8;
+    font-size: 18px;
+}
+
+
+
+
+/* Newsletter section styling */
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+
+button.btn {
+    background-color: #5A67D8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4A5568;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
