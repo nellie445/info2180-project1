@@ -1,21 +1,27 @@
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const form = document.querySelector('#newsletter-form');
-        const emailInput = document.querySelector('#email');
-        const messageDiv = document.querySelector('.message');
 
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    let but = document.body.getElementByClassname("btn");
 
-            const email = emailInput.value;
+    but[a].addEventListener('submit', function() {
+        let mes =document.body.getELementByClassName("message");
+        let tem =document.getElementById("email").value;
 
-            if (email.trim() === '') {
-                messageDiv.textContent = 'Please enter a valid email address.';
-            } else {
-                messageDiv.textContent = `Thank you! Your email address ${email} has been added to our mailing list!`;
-            }
-        });
+        if(tem != NULL) {
+            let mestxt = `Thank you! Your email address ${email} has been added to our mailing list!`;
+            mes.appendChild(mestxt);    
+        } 
+        else {
+             messageDiv.textContent = 'Please enter a valid email address.';
+            mes.appendChild(mestxt);   
+        }
+        'Please enter a valid email address.'
+    }); //but[a] end
+
+    var form = but[a].parentNode;
+    function handleForm(event) {event.preventDefault();}
+    form.addEventListenrr('submit', handleForm);
+
     });
-</script>
+
 
 
